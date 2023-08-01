@@ -1,8 +1,12 @@
 # Covid-Vax-Misinfo-Model
-Research Question: What are the dominant themes in Covid-19 vaccine misinformation on
-Twitter and are there trends in talking points over the course of the pandemic?
-Research Project Title: Observing Patterns in Covid-19 Vaccine Misinformation on Twitter.
-1. Introduction and Thesis:
+
+## Research Question 
+What are the dominant themes in Covid-19 vaccine misinformation on Twitter and are there trends in talking points over the course of the pandemic?
+
+## Research Project Title
+Observing Patterns in Covid-19 Vaccine Misinformation on Twitter.
+
+## Introduction and Thesis
 The issue of vaccine hesitancy has always been a challenge in widespread distribution. With the
 COVID-19 pandemic, came the rise of a misinformation campaign against vaccines for the
 coronavirus. While anti-vaccination attitudes have always existed, the prevalence of social
@@ -22,7 +26,8 @@ concurrent adult vaccination rate. This can give insight into the effectiveness 
 misinformation and see how rates of vaccination compare next to trending sources of antivaccine
 information. This will allow us to categorize topics by their harmfulness and it could be
 used to direct resources to combat the worst offenders.
-2. Related work:
+
+## Related work
 Using machine learning to detect misinformation has been explored extensively and has been
 used to combat the recent trend of vaccine misinformation. Quyen G. To et. Al compares
 different natural language machine learning models to see which is the most suitable one for
@@ -52,8 +57,9 @@ data/trends unavailable to other models. Social media, specifically the Twitter 
 of data largely untapped that could give major insight into public opinion about current events. It
 could signify attitudes about certain topics and we use it hear to try to understand public
 attitudes about the coronavirus vaccine and how they have shifted over time.
-3. Methods:
-3.1 Data
+
+## Methods:
+### Data
 We will use the CoVaxLies dataset from Weinzierl and Harabagiu. This gives us a recently
 reviewed dataset that is broken up into different Misinformation Targets. These targets were
 obtained from en.wikipedia.org/wiki/COVID-19_misinformation#Vaccines which also provides
@@ -91,7 +97,7 @@ country=USA, we can see how effective certain topics of misinformation are
 compared with others. Meaning, if we see the rate in change of vaccination rate lower after
 seeing the topic of “The COVID-19 vaccine contains tissue from aborted fetuses” trend, we can
 assume that this topic was particularly persuasive in dissuading the public to be innoculated.
-3.2. Misinformation Targets
+### Misinformation Targets
 There are a total of 17 topics of misinformation we will be targeting in this paper. These topics
 were chosen from Maxwell A. Weinzierl and Sanda M. Harabagiu in their work, Automatic
 detection of COVID-19 vaccine misinformation with graph link prediction. They chose the topics
@@ -112,7 +118,7 @@ topics of misinformation was being discussed at different times. By comparing th
 inoculation rates of the population, this gives insight into how misinformation could directly affect
 vaccination rates, while the work by Weinzierl focused on seeing how the different MisTs
 compared with one another on a Misinformation Knowledge Graph.
-3.2. Models
+### Models
 We will use a model of BERT called COVID-19-Language Model COVID-Twitter-BERT-v2 made
 by M. Müller, M. Salathe, and P.E. Kummervold. This is a model that was pre-trained with 97
 million COVID-19 tweets and has been shown to have higher performance than the standard
@@ -130,30 +136,36 @@ innoculation rates from https://ourworldindata.org/covid-vaccinations?country=US
 find a link between trending MisTs and a drop-in inoculation rate. This would show how the
 propagation of misinformation on social media is actively decreasing vaccination intent.
 Furthermore, it would show how certain MisTs are more effective in doing so.
-Results:
+
+## Results
 We hope to produce a precise model that is able to identify what kind of misinformation is in a
 Tweet and when it occurred. Then, we will find the most prevalent sources of misinformation
 towards vaccination rates in the USA.
-Discussion:
+
+## Discussion
 This work may be limited by it not being able to work with novel sources of misinformation.
 Furthermore, our model will not address the stance for the Tweet.
-Conclusion:
+
+## Conclusion
 Vaccination rates, while not what not we had hoped for, are improving everyday. With more and
 more data coming out regarding the efficacy of the vaccine, it's hard to prove that the vaccine
 does not work. However, misinformation is an issue that will never go away and continues to
 plague a segment of our population. By finding the most harmful sources of misinformation,
 resources could be targeted stopping their spread and find trends in what may be the next new
 reason not to be vaccinated.
-References:
+
+## References
 To, Quyen G., et al. “Applying Machine Learning to Identify Anti-Vaccination Tweets during the
 Covid-19 Pandemic.” International Journal of Environmental Research and Public
 Health, vol. 18, no. 8, 2021, p. 4069., https://doi.org/10.3390/ijerph18084069.
 Weinzierl, Maxwell A., and Sanda M. Harabagiu. “Automatic Detection of COVID-19 Vaccine
 Misinformation with Graph Link Prediction.” Journal of Biomedical Informatics, vol. 124,
 2021, p. 103955., https://doi.org/10.1016/j.jbi.2021.103955.
+
 M. Müller, M. Salathe, P.E. Kummervold, Covid-twitter-bert: A natural language
 processing model to analyse covid-19 content on twitter, https://arxiv.org/abs/
 2005.07503.
+
 Hayawi, K., et al. “ANTi-Vax: A Novel Twitter Dataset for COVID-19 Vaccine Misinformation
 Detection.” Public Health, vol. 203, 2022, pp. 23–30.,
 https://doi.org/10.1016/j.puhe.2021.11.022.
