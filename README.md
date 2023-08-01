@@ -58,7 +58,7 @@ of data largely untapped that could give major insight into public opinion about
 could signify attitudes about certain topics and we use it hear to try to understand public
 attitudes about the coronavirus vaccine and how they have shifted over time.
 
-## Methods:
+## Methods
 ### Data
 We will use the CoVaxLies dataset from Weinzierl and Harabagiu. This gives us a recently
 reviewed dataset that is broken up into different Misinformation Targets. These targets were
